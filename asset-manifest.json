@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/project-model-hackathon/static/js/main.c992562a.chunk.js",
+    "main.js.map": "/project-model-hackathon/static/js/main.c992562a.chunk.js.map",
+    "runtime-main.js": "/project-model-hackathon/static/js/runtime-main.db92c30a.js",
+    "runtime-main.js.map": "/project-model-hackathon/static/js/runtime-main.db92c30a.js.map",
+    "static/js/2.187a05a0.chunk.js": "/project-model-hackathon/static/js/2.187a05a0.chunk.js",
+    "static/js/2.187a05a0.chunk.js.map": "/project-model-hackathon/static/js/2.187a05a0.chunk.js.map",
+    "index.html": "/project-model-hackathon/index.html",
+    "static/js/2.187a05a0.chunk.js.LICENSE.txt": "/project-model-hackathon/static/js/2.187a05a0.chunk.js.LICENSE.txt",
+    "static/media/logo.a7098f92.png": "/project-model-hackathon/static/media/logo.a7098f92.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db92c30a.js",
+    "static/js/2.187a05a0.chunk.js",
+    "static/js/main.c992562a.chunk.js"
+  ]
+}
