@@ -1,8 +1,11 @@
 import React, { FormEvent, useState } from 'react';
 
-import { Container } from './styles';
+import { Main } from './styles';
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
+import Container from '../../components/Container';
+import Comment from '../../components/Comment';
+import nine from '../../assets/Images/nine.png';
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -16,7 +19,7 @@ export default function Home() {
 
   return (
     <Container>
-      <section>
+      <Main>
         <main>
           <form>
             <img src={logo} alt="logo" />
@@ -41,18 +44,25 @@ export default function Home() {
 
             <div>
               <span>
-                <Link to="/">Criar uma conta</Link>
+                <Link to="/newuser">Criar uma conta</Link>
               </span>
               <p>
-                <Link to="/">Recuperar senha</Link>
+                <Link to="/forgot">Recuperar senha</Link>
               </p>
             </div>
           </form>
         </main>
         <aside>
-          <h1>Conteúdo informativo...</h1>
+          <Comment
+            avatar={nine}
+            username="@nine"
+            text="Eu tinha acabado de sair de um relacionamento, e eu e a Annie 
+            estávamos começando a sair com mulheres e estávamos as duas nervosas 
+            e indo devagar por um tempo! A gente se apaixonou perdidamente muito 
+            rápido e sabíamos que tínhamos encontrado companheiras rapidamente."
+          />
         </aside>
-      </section>
+      </Main>
     </Container>
   );
 }

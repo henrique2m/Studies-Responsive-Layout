@@ -26,6 +26,14 @@ body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #404040;
+}
+
 body,
 input,
 button,
