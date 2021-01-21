@@ -2,20 +2,19 @@ import styled from 'styled-components';
 
 export const Main = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  overflow: auto;
+  background: var(--color-background);
 
   section {
     width: 70rem;
     height: 48rem;
     display: flex;
     justify-content: space-between;
-
-    background: #ccc;
+    background: var(--color-background);
     border-radius: 1rem;
   }
 
@@ -24,49 +23,59 @@ export const Main = styled.div`
     width: 50%;
     justify-content: center;
     align-items: center;
+    border-radius: 1rem 0 0 1rem;
   }
 
   section aside:last-child {
     width: 50%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    overflow: auto;
     align-items: center;
-    background: #fff;
     border-radius: 0 1rem 1rem 0;
+
+    ::-webkit-scrollbar-track {
+      background-color: #74d4d4;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+      background: #24182b;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
   }
 
-  /* @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     padding: 0;
+    min-height: 100%;
 
     section {
       width: 100%;
-      min-height: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      align-items: center;
       padding: 2rem 2rem;
+      border-radius: 0;
     }
 
-    section main {
+    section main:first-child {
       width: 100%;
+      display: flex;
     }
 
-    section aside {
-      width: 100%;
-    }
-
-    section main form input {
-      width: 100%;
-    }
-
-    section main form button {
-      width: 100%;
-    }
-    section main form div {
+    section aside:last-child {
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      margin-top: 3rem;
+      border-radius: 10px;
+      background: var(--color-background);
     }
-  } */
+  }
 `;

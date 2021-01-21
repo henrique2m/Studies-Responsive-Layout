@@ -31,7 +31,7 @@ a:link,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #404040;
+  color: #fff;
 }
 
 body,

@@ -16,10 +16,11 @@ export const NewComment = styled.div`
 
   display: flex;
   flex-direction: column;
-  background: #ccc;
+  background: #74d4d4;
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
 
   animation: fadeIn 02s ease;
 
@@ -48,7 +49,14 @@ export const NewComment = styled.div`
 
   P {
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin-left: 1rem;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 600px) {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
   }
 `;

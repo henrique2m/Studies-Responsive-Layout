@@ -14,6 +14,7 @@ export const ContainerButtons = styled.div`
     font-weight: bold;
     margin-bottom: 3rem;
     text-align: center;
+    color: #fff;
   }
 
   div {
@@ -21,8 +22,8 @@ export const ContainerButtons = styled.div`
   }
 
   div button {
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
 
     display: flex;
     justify-content: center;

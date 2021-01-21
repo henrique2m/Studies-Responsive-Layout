@@ -46,9 +46,9 @@ export default function Home() {
               <span>
                 <Link to="/newuser">Criar uma conta</Link>
               </span>
-              <p>
+              <span>
                 <Link to="/forgot">Recuperar senha</Link>
-              </p>
+              </span>
             </div>
           </form>
         </main>
@@ -56,10 +56,8 @@ export default function Home() {
           <Comment
             avatar={nine}
             username="@nine"
-            text="Eu tinha acabado de sair de um relacionamento, e eu e a Annie 
-            estávamos começando a sair com mulheres e estávamos as duas nervosas 
-            e indo devagar por um tempo! A gente se apaixonou perdidamente muito 
-            rápido e sabíamos que tínhamos encontrado companheiras rapidamente."
+            text={`"Depois que meu começou a aulas pelo aplicativo, 
+            ele teve uma melhora considerável no seu rendimento escolar..."`}
           />
         </aside>
       </Main>
